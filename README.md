@@ -9,7 +9,7 @@ Considering everything that's transpired, our team decided to determine whether 
 
 # ETL Final Report
 
-### Extraction
+### Extract
 
 For the extraction, our team obtained daily COVID-19 data from Kaggle, utilizing datasets that monitored new cases on city, state and county levels. For the campaign visits, we pulled data from a recent Chicago Tribune article. 
 
