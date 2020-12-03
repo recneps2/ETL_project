@@ -31,9 +31,11 @@ We then needed to combine the rally data with the COVID and using another jupyte
 
 After the transformation, we took the cleaned .csv data and loaded it into a relational database. Our goal was to make it for developers to use after the ETL pipeline.
 
-We designed a normalized schema that can be utilized for applications that examine statistics before and after election campaign visits. We tracked changes in COVID-19 case growth, and we provide the structure and tables to analyze additional variables pre- and post-campaign visits (ex. number of COVID-19 deaths).
+We then designed a normalized schema that can be utilized for applications that examine statistics before and after election campaign visits. We tracked changes in COVID-19 case growth, and we provide the structure and tables to analyze additional variables pre- and post-campaign visits (ex. number of COVID-19 deaths).
 
 We stored variables (pre_rally_date, post_rally_date) to allow the window size to be changed. This schema allows any number of election candidates and is structured to further easily track candidate details such as political party.
+
+![](https://github.com/recneps2/ETL_project/blob/main/QuickDBD-ERD.png?raw=true)
 
 ### Challenges
 
