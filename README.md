@@ -25,7 +25,7 @@ For the transformation, both of the datasets needed to be cleaned and then joine
 
 First, we cleaned rally data using pandas to only display the presidential candidates, the date of their visit, the month number, and the month name. 
 
-We then needed to combine the rally data with the COVID-19 data, and using another jupyter notebook (covid_ave_growth_per_month.ipynb); we combined our data frames and pulled only the data for the election months. After that, we created a new data frame displaying our cases on the day of a presidential visit, the number of cases 14 days later, and the percentage change in cases over two two-week windows.
+We then needed to combine the rally data with the COVID-19 data, and using another jupyter notebook (covid_ave_growth_per_month.ipynb); we combined our data frames and pulled only the data for the election months. After that, we created a new data frame displaying our cases on the day of a presidential campaign visit, the number of cases 14 days later, and the percentage change in cases over two two-week windows.
 
 ### Load
 
