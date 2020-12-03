@@ -25,13 +25,13 @@ For the transformation, both of the datasets needed to be cleaned and then joine
 
 First, we cleaned rally data using pandas to only display the presidential candidates, the date of their visit, the month number, and the month name. 
 
-We then needed to combine the rally data with the COVID-19 data, and using another jupyter notebook (covid_ave_growth_per_month.ipynb), we combined our data frames and pulled only the data for the election months. After that, we created a new data frame displaying our cases on the day of a presidential visit, the number of cases fourteen days later, and the percentage change in cases over that two-week window. 
+We then needed to combine the rally data with the COVID-19 data, and using another jupyter notebook (covid_ave_growth_per_month.ipynb); we combined our data frames and pulled only the data for the election months. After that, we created a new data frame displaying our cases on the day of a presidential visit, the number of cases 14 days later, and the percentage change in cases over two two-week windows.
 
 ### Load
 
 After the transformation, we took our cleaned .csv data and loaded it into a relational database. Our goal was to make the data usable for developers after the ETL pipeline.
 
-We designed a normalized schema that can be utilized for applications that examine statistics before and after election campaign visits. We tracked changes in COVID-19 case growth, and we provide the structure and tables to analyze additional variables pre- and post-campaign visits (e.g., number of COVID-19 deaths).
+We designed a normalized schema that can be utilized for applications that examine statistics before and after election campaign visits. We tracked changes in the rate of COVID-19 case growth, and we provide the structure and tables to analyze additional variables pre and post campaign visits (e.g., number of COVID-19 deaths).
 
 We stored variables (pre_rally_date, post_rally_date) to allow the window size to be changed. This schema allows any number of election candidates and is structured to further easily track candidate details such as political party.
 
